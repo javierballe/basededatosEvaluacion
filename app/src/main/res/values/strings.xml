@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">agregartarjeta</string>
+    <string name="title_item_list">Items</string>
+    <string name="title_item_detail">Item Detail</string>
+    <string name="Titulo">informacion de tarjeta</string>
+    <string name="numeroTarjeta">nu. Tarjeta</string>
+    <string name="nombre">Nombre</string>
+    <string name="mes">mes</string>
+    <string name="CVV">CVV</string>
+    <string name="año">AÑO</string>
+    <string name="agregar">AGREGAR</string>
+    <string name="guardar">guardar</string>
+</resources>
