@@ -10,4 +10,12 @@
     <string name="año">AÑO</string>
     <string name="agregar">AGREGAR</string>
     <string name="guardar">guardar</string>
+    <string name="apellido">Apellido</string>
+    <string name="calleNum">Calle y Numero</string>
+    <string name="ciudad">Ciudad</string>
+    <string name="codigo">Codigo Postal</string>
+    <string name="estado">Estado/Region</string>
+    <string name="REG">Registrar</string>
+    <string name="busca">Buscar</string>
+    <string name="REGI">Tarjeta Registrada</string>
 </resources>

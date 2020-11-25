@@ -15,102 +15,195 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         card_view:cardBackgroundColor="@color/primary_light"
-        card_view:cardCornerRadius="6dp"
+        card_view:cardCornerRadius="8dp"
         card_view:cardElevation="10dp"
         card_view:cardPreventCornerOverlap="false"
         card_view:cardUseCompatPadding="true">
 
-        <LinearLayout
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/primary"
-                android:gravity="center"
-                android:paddingTop="5dp"
-                android:paddingBottom="5dp"
-                android:text="@string/Titulo"
-                android:textAppearance="?android:textAppearanceMedium"
-                android:textColor="@color/primary_light"
-                android:textStyle="bold" />
-
-            <EditText
-                android:id="@+id/nuTarjeta"
-                android:maxLength="16"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:hint="@string/numeroTarjeta"
-                android:inputType="numberDecimal"
-                android:textAppearance="?android:textAppearanceSmall"
-                android:textColorHint="@color/accent" />
-
-            <EditText
-                android:id="@+id/nombre"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:hint="@string/nombre"
-                android:inputType="numberDecimal"
-                android:textAppearance="?android:textAppearanceSmall"
-                android:textColorHint="@color/accent" />
-
-
+            android:layout_height="wrap_content">
             <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
+                android:layout_width="match_parent"
+                android:layout_height="442dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/primary"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="@string/Titulo"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@color/primary_light"
+                    android:textStyle="bold" />
 
                 <EditText
-                    android:id="@+id/mes"
-                    android:layout_width="99dp"
+                    android:id="@+id/nuTarjeta"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:maxLength="2"
-                    android:layout_margin="12dp"
-                    android:layout_weight="1"
-                    android:hint="@string/mes"
+                    android:layout_margin="5dp"
+                    android:hint="@string/numeroTarjeta"
                     android:inputType="numberDecimal"
+                    android:maxLength="16"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColorHint="@color/accent" />
+
+
+                <EditText
+                    android:id="@+id/nombr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:hint="@string/nombre"
                     android:textAppearance="?android:textAppearanceSmall"
                     android:textColorHint="@color/accent" />
 
                 <EditText
-                    android:id="@+id/año"
-                    android:layout_width="104dp"
+                    android:id="@+id/apelli"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:maxLength="4"
-                    android:layout_margin="12dp"
-                    android:layout_weight="1"
-                    android:hint="@string/año"
-                    android:inputType="numberDecimal"
+                    android:layout_margin="5dp"
+                    android:hint="@string/apellido"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColorHint="@color/accent" />
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/mis"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="12dp"
+                        android:layout_weight="1"
+                        android:hint="@string/mes"
+                        android:inputType="numberDecimal"
+                        android:maxLength="2"
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:textColorHint="@color/accent" />
+
+                    <EditText
+                        android:id="@+id/año"
+                        android:layout_width="104dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="12dp"
+                        android:layout_weight="1"
+                        android:hint="@string/año"
+                        android:inputType="numberDecimal"
+                        android:maxLength="4"
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:textColorHint="@color/accent" />
+
+                    <EditText
+                        android:id="@+id/CV"
+                        android:layout_width="74dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="12dp"
+                        android:layout_weight="1"
+                        android:hint="@string/CVV"
+                        android:inputType="numberDecimal"
+                        android:maxLength="3"
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:textColorHint="@color/accent" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="Direccion" />
+
+                <EditText
+                    android:id="@+id/calle.numero"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:hint="@string/calleNum"
                     android:textAppearance="?android:textAppearanceSmall"
                     android:textColorHint="@color/accent" />
 
                 <EditText
-                    android:id="@+id/CVV"
-                    android:layout_width="71dp"
+                    android:id="@+id/ciudad"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:maxLength="3"
-                    android:layout_margin="12dp"
-                    android:layout_weight="1"
-                    android:hint="@string/CVV"
-                    android:inputType="numberDecimal"
+                    android:layout_margin="5dp"
+                    android:hint="@string/ciudad"
                     android:textAppearance="?android:textAppearanceSmall"
                     android:textColorHint="@color/accent" />
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/estado"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="12dp"
+                        android:layout_weight="1"
+                        android:hint="@string/estado"
+                        android:maxLength="2"
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:textColorHint="@color/accent" />
+
+                    <EditText
+                        android:id="@+id/codigo"
+                        android:layout_width="104dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="12dp"
+                        android:layout_weight="1"
+                        android:hint="@string/codigo"
+                        android:inputType="textPostalAddress"
+                        android:maxLength="4"
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:textColorHint="@color/accent" />
+
+                </LinearLayout>
+
             </LinearLayout>
-        </LinearLayout>
+
+        </ScrollView>
+
+
 
     </androidx.cardview.widget.CardView>
-<Button
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_gravity="end"
-    android:text="@string/agregar"
-    android:padding="5dp"
-    android:background="@color/primary"
-    android:textColor="@color/primary_light"
-    />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="12dp"
+            android:layout_weight="1"
+            android:background="@color/primary"
+            android:padding="5dp"
+            android:text="@string/REG"
+            android:textColor="@color/primary_light" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_margin="12dp"
+            android:layout_weight="1"
+            android:background="#FF9800"
+            android:padding="5dp"
+            android:text="@string/busca"
+            android:textColor="@color/primary_light" />
+    </LinearLayout>
+
 
 </LinearLayout>
